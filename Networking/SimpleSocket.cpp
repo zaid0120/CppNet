@@ -17,9 +17,6 @@ ZAI::SimpleSocket::SimpleSocket(int domain, int service, int protocol,
 	// Establish socket and test
 	sock = socket(domain, service, protocol);
 	test_connection(sock);
-	// Establish network connection
-	connection = connect_to_network(sock, address);
-	test_connection(connection);
 }
 
 // Test Connection Virtual Function
@@ -47,4 +44,10 @@ int ZAI::SimpleSocket::get_sock()
 int ZAI::SimpleSocket::get_connection()
 {
 	return connection;
+}
+
+// Setter Functions
+void ZAI::SimpleSocket::set_connection(int con)
+{
+	connection = con;
 }

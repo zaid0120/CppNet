@@ -33,6 +33,8 @@ public:
 	struct sockaddr_in get_address();
 	int get_sock();
 	int get_connection();
+	// Setter Functions
+	void set_connection(int con);
 };
 }
 
