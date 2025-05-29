@@ -39,3 +39,5 @@ public:
 }
 
 
+#endif /* SimpleSocket_hpp  */
+

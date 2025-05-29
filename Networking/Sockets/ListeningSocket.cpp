@@ -14,5 +14,18 @@ ZAI::ListeningSocket::ListeningSocket(int domain, int service,
 
 void ZAI::ListeningSocket::start_listening()
 {
-	listening = listen(get_connection(), backlog);
+	listening = listen(get_sock(), backlog);
 }
+
+//getters
+
+int ZAI::ListeningSocket::get_listening()
+{
+	return listening;
+}
+
+int ZAI::ListeningSocket::get_backlog()
+{
+	return backlog;
+}
+

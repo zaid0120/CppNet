@@ -22,3 +22,5 @@ public:
 };
 
 }
+
+#endif /* BindingSocket_hpp  */
