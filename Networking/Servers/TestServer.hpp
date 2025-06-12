@@ -5,6 +5,7 @@
 #include <unistd.h>
 #include <cstring>
 #include <fstream>
+#include <sstream>
 
 #include "SimpleServer.hpp"
 
@@ -15,6 +16,7 @@ class TestServer: public SimpleServer
 private:
 	char buffer[30000] = {0};
 	int new_socket;
+	std::string requested_path;
 
 	void accepter();
 	void handler();
